@@ -1,0 +1,35 @@
+/* Universal Styles */
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+  background-color: 000;
+}
+
+main {
+  width: 960px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+/* Header Area Styles */
+.logo, .title h2 {
+  padding: 0 0.5rem;
+}
+
+.title {
+  padding: 0.66rem 0;
+}
+
+.logo {
+  height: 1.5rem;
+}

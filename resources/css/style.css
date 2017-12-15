@@ -5,6 +5,9 @@ html {
 
 body {
   font-family: Helvetica;
+}
+
+p {
   line-height: 1.3rem;
 }
 
@@ -97,7 +100,7 @@ li {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .item {
@@ -109,10 +112,16 @@ li {
   width: 30%;
 }
 
+.item-image {
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+
 .item img {
   align-self: center;
-  max-width: 9rem;
   /* Redline states height of imgs should be 9rem but this does not match design, I have flipped the height/width specifications*/
+  width: 9rem;
   height: auto;
   padding: 2rem;
 }

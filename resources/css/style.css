@@ -63,7 +63,9 @@ header, .caption, .item .caption, footer {
 .caption {
   width: 20rem;
   padding: 2rem 3rem;
-  margin: auto;
+  margin-right: 100%;
+  position: relative;
+  top: 9rem;
 }
 
 .caption h2 {

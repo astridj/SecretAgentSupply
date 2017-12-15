@@ -183,7 +183,7 @@ footer p {
     width: 90%;
   }
 
-  .location, .hours {
+  .location, .hours  {
     width: 48%;
   }
 
@@ -197,10 +197,10 @@ footer p {
 
   .item {
     min-width: 14rem;
+    width: 46.5%;
   }
 
   footer p {
     padding-left: 5%;
   }
-
 }

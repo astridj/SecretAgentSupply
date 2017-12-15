@@ -38,6 +38,7 @@ header, .caption, .item .caption, .item-header, footer {
   width: 960px;
   margin: 0 auto;
 }
+
 /* Header Area Styles */
 .logo, .title h2 {
   padding: 0 0.5rem;
@@ -76,9 +77,14 @@ header, .caption, .item .caption, .item-header, footer {
   font-weight: bold;
   padding-bottom: 0.25rem;
 }
+
 /* Nav Bar Styles */
-.nav {
+nav {
   background-color: firebrick;
+}
+
+.handheld {
+  display: none;
 }
 
 ul {
@@ -86,7 +92,7 @@ ul {
   justify-content: space-between;
 }
 
-li {
+li, .handheld p {
   padding: 0.75rem 0;
 }
 
@@ -154,4 +160,47 @@ footer {
 footer p {
   position: relative;
   top: 50%;
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .handheld {
+    display: block;
+    text-align: center;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .shop, .title {
+    width: 90%;
+  }
+
+  .location, .hours {
+    width: 48%;
+  }
+
+  .caption {
+    margin-left: 5%;
+  }
+
+  .gallery {
+    overflow: hidden;
+  }
+
+  .item {
+    min-width: 14rem;
+  }
+
+  footer p {
+    padding-left: 5%;
+  }
+
 }

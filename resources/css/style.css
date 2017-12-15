@@ -191,10 +191,6 @@ footer p {
     margin-left: 5%;
   }
 
-  .gallery {
-    overflow: hidden;
-  }
-
   .item {
     min-width: 14rem;
     width: 46.5%;
@@ -202,5 +198,55 @@ footer p {
 
   footer p {
     padding-left: 5%;
+  }
+}
+
+@media only screen and (max-width: 610px) {
+  /*I've added this instead of the 470px-width media query because this is where the design breaks*/
+  .title h2, .tablet {
+    display: none;
+  }
+ /* Design choices reflect a combination of the redline and mobile.jpg supplied as they do not match*/
+  .logo {
+    margin: 0 auto;
+    padding: 0.5rem 0;
+  }
+
+  .hero {
+    height: 15rem;
+  }
+
+  .caption {
+    width: 100%;
+    padding: 2rem 2rem;
+    margin: 0;
+    position: relative;
+    top: 8.5rem;
+  }
+
+  .caption h1 {
+    font-size: 1rem;
+  }
+
+  .caption h2 {
+    font-size: 0.77rem;
+    font-weight: normal;
+  }
+
+.location, .hours {
+    padding: 0.5rem 0;
+}
+
+  .item, .location, .hours {
+    width: 100%;
+  }
+
+  .info {
+    flex-wrap: wrap;
+  }
+
+  footer p {
+    text-align: center;
+    padding: 0;
   }
 }

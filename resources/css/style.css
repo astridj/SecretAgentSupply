@@ -124,6 +124,15 @@ p {
   padding: 0.5rem 0;
 }
 
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location, .hours {
+  width: 35%;
+}
+
 /* Footer Styles */
 footer {
   /* Redline height notation (5rem) does not match design */
